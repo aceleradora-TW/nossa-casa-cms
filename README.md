@@ -1,57 +1,85 @@
-# 🚀 Getting started with Strapi
+# 🚀 Começando com Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+  Strapi vem com uma [Interface de Linha de Comando](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) que permite montar e gerenciar o projeto.
 
+## `Tecnologias`
+
+- Node v14.21
+- JavaScript / Typescript
+- Express
+- [postgreSQL v10.23](https://www.postgresql.org/download/)
+
+### `Clonar repositório`
+
+  Abra o terminal do seu sistema operacional e digite o seguinte comando:
+
+  ```bash
+  git clone https://github.com/aceleradora-TW/nossa-casa-cms.git
+  ```
+  ### `Instalar o Yarn`
+
+  Caso não possua o yarn em sua maquína, abra o terminal do seu sistema operacional e digite o seguinte comando:
+
+  ```bash
+  npm install -g yarn
+  ```
+  
+ ### `Instalar as depêndencia`
+ 
+ Para instalar as depêndencias, volte no terminal, e digite o seguinte comando:
+ 
+  ```bash
+  yarn install
+  ```
+
+##  Comandos do Strapi
 ### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+Comece seu aplicativo Strapi com recarregamento automático ativado. [Saiba mais](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
 ```
-npm run develop
-# or
 yarn develop
 ```
 
 ### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+Comece seu aplicativo Strapi com recarregamento automático desativado. [Saiba mais](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
 ```
-npm run start
-# or
 yarn start
 ```
 
 ### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+Crie o painel de admin. [Saiba mais](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
 ```
-npm run build
-# or
 yarn build
 ```
 
-## ⚙️ Deployment
+## 🔧 Variáveis de Ambiente(.env)
+```bash
+  HOST=0.0.0.0
+  PORT=1337
+  APP_KEYS=#Defina uma Key
+  API_TOKEN_SALT=#Defina um Token
+  ADMIN_JWT_SECRET=#crie uma secret para admin
+  TRANSFER_TOKEN_SALT=#Defina o token salt
+  # Database
+  DATABASE_CLIENT=# nome do banco de dados utilizado
+  DATABASE_HOST=# endereço do host
+  DATABASE_PORT=# porta do banco de dados, padrão do postgres: 5432
+  DATABASE_NAME= nossa_casa
+  DATABASE_USERNAME=# username do servidor
+  DATABASE_PASSWORD=# senha do servidor
+  DATABASE_SSL= false
+  JWT_SECRET=# crie outra secret
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+```
+## 📚 Saiba Mais
 
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
+- [Central de Recurso](https://strapi.io/resource-center) - central de recurso Strapi.
+- [Strapi Documentação](https://docs.strapi.io) - Documentação Oficial Strapi.
+- [Strapi Tutoriais](https://strapi.io/tutorials) - Lista de tutoriais montados pelo time principal e pela comunidade.
 - [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+- [Changelog](https://strapi.io/changelog) - Encontre sobre atualizações do Strapi, novas funcionalidades e e melhorias gerais.
