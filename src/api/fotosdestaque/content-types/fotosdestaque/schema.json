@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "fotos_destaques",
+  "info": {
+    "singularName": "fotosdestaque",
+    "pluralName": "fotos-destaques",
+    "displayName": "Fotos_destaque"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "fotos_destaque": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

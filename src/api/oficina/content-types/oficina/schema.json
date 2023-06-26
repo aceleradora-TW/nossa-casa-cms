@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oficinas",
+  "info": {
+    "singularName": "oficina",
+    "pluralName": "oficinas",
+    "displayName": "Oficinas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string",
+      "required": true
+    },
+    "Datas_oficina": {
+      "type": "component",
+      "repeatable": true,
+      "component": "datas-oficina.datas"
+    },
+    "Horario_Inicio": {
+      "type": "time",
+      "required": true
+    },
+    "Horario_FIm": {
+      "type": "time",
+      "required": true
+    },
+    "Duracao": {
+      "type": "string"
+    },
+    "Local": {
+      "type": "string",
+      "required": true
+    },
+    "Preco": {
+      "type": "decimal",
+      "required": false
+    },
+    "Descricao": {
+      "type": "text"
+    },
+    "URL_Inscricao": {
+      "type": "string"
+    },
+    "Foto_divulgacao": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Foto_Oficina": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "parceires": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::parceire.parceire",
+      "mappedBy": "oficinas"
+    }
+  }
+}
