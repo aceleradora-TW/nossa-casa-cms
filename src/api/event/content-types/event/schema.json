@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Roda de Conversa",
+        "Show"
+      ],
+      "required": true
+    },
+    "data": {
+      "type": "date",
+      "required": true
+    },
+    "horario_inicio": {
+      "type": "time"
+    },
+    "horario_fim": {
+      "type": "time"
+    },
+    "local": {
+      "type": "string"
+    },
+    "preco": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "url_inscricao": {
+      "type": "string"
+    },
+    "foto_divulgacao": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "fotos_evento": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
