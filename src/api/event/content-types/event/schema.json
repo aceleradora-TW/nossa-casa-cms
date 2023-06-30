@@ -47,19 +47,27 @@
       "type": "string"
     },
     "foto_divulgacao": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "fotos_evento": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "parceires": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::parceire.parceire",
+      "inversedBy": "events"
     }
   }
 }
