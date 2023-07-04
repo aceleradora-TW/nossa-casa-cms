@@ -4,7 +4,7 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event",
+    "displayName": "Evento",
     "description": ""
   },
   "options": {
@@ -23,16 +23,6 @@
         "Show"
       ],
       "required": true
-    },
-    "data": {
-      "type": "date",
-      "required": true
-    },
-    "horario_inicio": {
-      "type": "time"
-    },
-    "horario_fim": {
-      "type": "time"
     },
     "local": {
       "type": "string"
@@ -68,6 +58,18 @@
       "relation": "manyToMany",
       "target": "api::parceire.parceire",
       "inversedBy": "events"
+    },
+    "data": {
+      "required": true,
+      "type": "date"
+    },
+    "horario_inicio": {
+      "type": "string",
+      "required": true
+    },
+    "horario_fim": {
+      "type": "string",
+      "required": true
     }
   }
 }
