@@ -12,24 +12,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nome": {
+    "nome": {
       "type": "string",
       "required": true
     },
     "carga_horaria": {
       "type": "string"
     },
-    "Local": {
+    "local": {
       "type": "string",
       "required": true
     },
-    "Descricao": {
+    "descricao": {
       "type": "text"
     },
-    "URL_Inscricao": {
+    "url_inscricao": {
       "type": "string"
     },
-    "Foto_divulgacao": {
+    "foto_divulgacao": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -37,7 +37,7 @@
         "images"
       ]
     },
-    "Foto_Oficina": {
+    "foto_oficina": {
       "type": "media",
       "multiple": true,
       "required": false,
