@@ -4,7 +4,8 @@
   "info": {
     "singularName": "terapia",
     "pluralName": "terapias",
-    "displayName": "Terapias"
+    "displayName": "Terapias",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,12 +33,8 @@
       },
       "type": "enumeration",
       "enum": [
-        "Psicologia",
-        "Tarot e magia natural",
-        "Reiki",
-        "Terapia Integrativa",
-        "Constelação familiar",
-        "Massoterapia"
+        "Individual",
+        "Em Grupo"
       ],
       "required": true
     },
@@ -101,14 +98,15 @@
       "type": "string"
     },
     "Foto_divulgacao": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -116,25 +114,20 @@
       }
     },
     "Foto_terapias": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
-    },
-    "parceires": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::parceire.parceire",
-      "mappedBy": "terapias"
     }
   }
 }

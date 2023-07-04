@@ -4,7 +4,8 @@
   "info": {
     "singularName": "oficina",
     "pluralName": "oficinas",
-    "displayName": "Oficinas"
+    "displayName": "Oficinas",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,29 +16,12 @@
       "type": "string",
       "required": true
     },
-    "Datas_oficina": {
-      "type": "component",
-      "repeatable": true,
-      "component": "datas-oficina.datas"
-    },
-    "Horario_Inicio": {
-      "type": "time",
-      "required": true
-    },
-    "Horario_FIm": {
-      "type": "time",
-      "required": true
-    },
-    "Duracao": {
+    "carga_horaria": {
       "type": "string"
     },
     "Local": {
       "type": "string",
       "required": true
-    },
-    "Preco": {
-      "type": "decimal",
-      "required": false
     },
     "Descricao": {
       "type": "text"
@@ -46,24 +30,39 @@
       "type": "string"
     },
     "Foto_divulgacao": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Foto_Oficina": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "parceires": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::parceire.parceire",
-      "mappedBy": "oficinas"
+    "data_inicio": {
+      "type": "date",
+      "required": true
+    },
+    "data_fim": {
+      "required": true,
+      "type": "date"
+    },
+    "horario_inicio": {
+      "type": "string",
+      "required": true
+    },
+    "horario_fim": {
+      "type": "string",
+      "required": true
+    },
+    "preco": {
+      "type": "string"
     }
   }
 }
