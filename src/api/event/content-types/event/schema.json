@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Evento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Roda de Conversa",
+        "Show"
+      ],
+      "required": true
+    },
+    "local": {
+      "type": "string"
+    },
+    "preco": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "url_inscricao": {
+      "type": "string"
+    },
+    "foto_divulgacao": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fotos_evento": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "parceires": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::parceire.parceire",
+      "inversedBy": "events"
+    },
+    "data": {
+      "required": true,
+      "type": "date"
+    },
+    "horario_inicio": {
+      "type": "string",
+      "required": true
+    },
+    "horario_fim": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
