@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "events",
+  "collectionName": "workshop",
   "info": {
-    "singularName": "event",
-    "pluralName": "events",
-    "displayName": "Evento",
+    "singularName": "workshop",
+    "pluralName": "workshops",
+    "displayName": "Oficinas",
     "description": ""
   },
   "options": {
@@ -16,50 +16,40 @@
       "type": "string",
       "required": true
     },
-    "tipo": {
-      "type": "enumeration",
-      "enum": [
-        "Roda de Conversa",
-        "Show"
-      ],
-      "required": true
+    "carga_horaria": {
+      "type": "string"
     },
     "local": {
-      "type": "string"
-    },
-    "preco": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "descricao": {
-      "type": "richtext"
+      "type": "text"
     },
     "url_inscricao": {
       "type": "string"
     },
     "foto_divulgacao": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images"
       ]
     },
-    "fotos_evento": {
+    "foto_oficina": {
       "type": "media",
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
-    "parceires": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::partner.partner",
-      "inversedBy": "events"
+    "data_inicio": {
+      "type": "date",
+      "required": true
     },
-    "data": {
+    "data_fim": {
       "required": true,
       "type": "date"
     },
@@ -70,6 +60,9 @@
     "horario_fim": {
       "type": "string",
       "required": true
+    },
+    "preco": {
+      "type": "string"
     }
   }
 }
