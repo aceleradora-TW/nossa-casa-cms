@@ -37,18 +37,26 @@
       "type": "string"
     },
     "foto": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "events": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "parceires"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "fixo",
+        "temporario"
+      ],
+      "required": true
     }
   }
 }
