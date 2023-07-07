@@ -81,14 +81,6 @@
       },
       "type": "string"
     },
-    "descricao": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text"
-    },
     "url_agendamento": {
       "pluginOptions": {
         "i18n": {
@@ -128,6 +120,15 @@
           "localized": true
         }
       }
+    },
+    "descricao": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "richtext",
+      "required": true
     }
   }
 }

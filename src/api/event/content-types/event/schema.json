@@ -70,6 +70,9 @@
     "horario_fim": {
       "type": "string",
       "required": true
+    },
+    "destaque": {
+      "type": "boolean"
     }
   }
 }

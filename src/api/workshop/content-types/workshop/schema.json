@@ -23,9 +23,6 @@
       "type": "string",
       "required": true
     },
-    "descricao": {
-      "type": "text"
-    },
     "url_inscricao": {
       "type": "string"
     },
@@ -63,6 +60,10 @@
     },
     "preco": {
       "type": "string"
+    },
+    "descricao": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
