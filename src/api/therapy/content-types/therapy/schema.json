@@ -47,23 +47,6 @@
       "type": "string",
       "required": true
     },
-    "horario_inicio": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": false,
-      "type": "time"
-    },
-    "horario_fim": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "time"
-    },
     "local": {
       "pluginOptions": {
         "i18n": {
@@ -128,6 +111,24 @@
         }
       },
       "type": "richtext",
+      "required": true
+    },
+    "horario_inicio": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "horario_fim": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
       "required": true
     }
   }
