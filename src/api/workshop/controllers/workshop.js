@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * parceire controller
+ * oficina controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::parceire.parceire');
+module.exports = createCoreController('api::workshop.workshop');
