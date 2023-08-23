@@ -57,6 +57,12 @@
         "temporario"
       ],
       "required": true
+    },
+    "oficinas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::workshop.workshop",
+      "mappedBy": "parceires"
     }
   }
 }
