@@ -58,7 +58,7 @@
       ],
       "required": true
     },
-    "oficinas": {
+    "workshop": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::workshop.workshop",
