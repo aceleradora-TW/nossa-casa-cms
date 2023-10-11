@@ -59,7 +59,7 @@
       "target": "api::partner.partner",
       "inversedBy": "events"
     },
-    "data": {
+    "data_inicio": {
       "required": true,
       "type": "date"
     },
@@ -73,6 +73,20 @@
     },
     "destaque": {
       "type": "boolean"
+    },
+    "subeventos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    },
+    "data_fim": {
+      "required": true,
+      "type": "date"
+    },
+    "oficinas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::workshop.workshop"
     }
   }
 }
