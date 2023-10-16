@@ -64,6 +64,20 @@
     "descricao": {
       "type": "richtext",
       "required": true
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Roda de Conversa",
+        "Show"
+      ],
+      "required": true
+    },
+    "parceires": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::partner.partner",
+      "inversedBy": "workshop"
     }
   }
 }
