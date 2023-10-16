@@ -146,6 +146,12 @@
         }
       },
       "type": "date"
+    },
+    "parceires": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::partner.partner",
+      "inversedBy": "terapias"
     }
   }
 }

@@ -63,6 +63,12 @@
       "relation": "manyToMany",
       "target": "api::workshop.workshop",
       "mappedBy": "parceires"
+    },
+    "terapias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::therapy.therapy",
+      "mappedBy": "parceires"
     }
   }
 }
