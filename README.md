@@ -76,6 +76,12 @@ yarn build
   JWT_SECRET=# crie outra secret
 
 ```
+
+# Strapi admin
+Vá em `configurações > roles (user & permissions plugin) > public`.
+Ative find e findOne para Event, Partner, Therapy, Workshop e para Gallery ative apenas find.
+
+
 ## 📚 Saiba Mais
 
 - [Central de Recurso](https://strapi.io/resource-center) - central de recurso Strapi.
@@ -83,3 +89,5 @@ yarn build
 - [Strapi Tutoriais](https://strapi.io/tutorials) - Lista de tutoriais montados pelo time principal e pela comunidade.
 - [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
 - [Changelog](https://strapi.io/changelog) - Encontre sobre atualizações do Strapi, novas funcionalidades e e melhorias gerais.
+
+
