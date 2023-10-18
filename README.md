@@ -77,7 +77,7 @@ yarn build
 
 ```
 
-# Strapi admin
+## Strapi admin
 Vá em `configurações > roles (user & permissions plugin) > public`.
 Ative find e findOne para Event, Partner, Therapy, Workshop e para Gallery ative apenas find.
 
