@@ -29,7 +29,7 @@
     "foto_divulgacao": {
       "type": "media",
       "multiple": true,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
@@ -37,7 +37,7 @@
     "foto_oficina": {
       "type": "media",
       "multiple": true,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]

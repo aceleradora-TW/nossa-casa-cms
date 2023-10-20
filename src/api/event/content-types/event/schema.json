@@ -20,7 +20,12 @@
       "type": "enumeration",
       "enum": [
         "Roda de Conversa",
-        "Show"
+        "Show",
+        "Festival",
+        "Encontro",
+        "Rolê",
+        "Feira",
+        "Jornada"
       ],
       "required": true
     },
@@ -39,7 +44,7 @@
     "foto_divulgacao": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
@@ -47,7 +52,7 @@
     "fotos_evento": {
       "type": "media",
       "multiple": true,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "videos"
