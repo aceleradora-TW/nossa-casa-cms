@@ -81,6 +81,9 @@ yarn build
 Vá em `configurações > roles (user & permissions plugin) > public`.
 Ative find e findOne para Event, Partner, Therapy, Workshop e para Gallery ative apenas find.
 
+## Husky
+Caso o husky não rode, execute o seguinte comando:
+```chmod +x .husky/prepare-commit-msg```
 
 ## 📚 Saiba Mais
 
