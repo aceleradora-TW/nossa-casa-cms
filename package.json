@@ -3,13 +3,19 @@
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
+  "license": "MIT",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2"
+  },
   "dependencies": {
     "@strapi/plugin-i18n": "4.10.2",
     "@strapi/plugin-users-permissions": "4.10.2",
@@ -29,5 +35,16 @@
     "node": ">=18.16.0",
     "npm": ">=7.0.0"
   },
-  "license": "MIT"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.css": ["stylelint --fix", "git add"],
+    "*.md": ["markdownlint", "git add"],
+    "*.json": ["prettier --write", "git add"],
+    "*": "git add"
+  }
 }
