@@ -36,7 +36,8 @@
       "type": "string"
     },
     "descricao": {
-      "type": "richtext"
+      "type": "richtext",
+      "default": "## Titulo "
     },
     "url_inscricao": {
       "type": "string"
