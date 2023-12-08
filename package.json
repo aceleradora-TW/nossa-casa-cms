@@ -19,6 +19,7 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.10.2",
     "@strapi/plugin-users-permissions": "4.10.2",
+    "@strapi/provider-upload-cloudinary": "^4.15.5",
     "@strapi/strapi": "4.10.2",
     "axios": "^1.4.0",
     "express": "^4.18.2",
@@ -32,7 +33,7 @@
     "uuid": "901b7c85-3fb3-4423-90a9-d7020c1f3e47"
   },
   "engines": {
-    "node": ">=18.16.0",
+    "node": ">=16.16.0",
     "npm": ">=7.0.0"
   },
   "husky": {
@@ -41,10 +42,22 @@
     }
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.css": ["stylelint --fix", "git add"],
-    "*.md": ["markdownlint", "git add"],
-    "*.json": ["prettier --write", "git add"],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "*.md": [
+      "markdownlint",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ],
     "*": "git add"
   }
 }
