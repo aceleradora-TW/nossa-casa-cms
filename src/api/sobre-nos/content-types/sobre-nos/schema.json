@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "plural_sobre_nos",
   "info": {
     "singularName": "sobre-nos",
