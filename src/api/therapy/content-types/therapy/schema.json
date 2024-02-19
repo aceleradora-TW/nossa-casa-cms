@@ -34,7 +34,14 @@
       "type": "enumeration",
       "enum": [
         "Individual",
-        "Em Grupo"
+        "Em Grupo",
+        "Oficinas",
+        "Rodas",
+        "Show",
+        "Expo",
+        "Feira",
+        "Festival",
+        "Rolê"
       ],
       "required": true
     },
