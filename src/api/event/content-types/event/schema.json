@@ -25,7 +25,10 @@
         "Encontro",
         "Rolê",
         "Feira",
-        "Jornada"
+        "Jornada",
+        "Oficinas",
+        "Rodas",
+        "Expo"
       ],
       "required": true
     },
