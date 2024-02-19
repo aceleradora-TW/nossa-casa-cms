@@ -69,7 +69,14 @@
       "type": "enumeration",
       "enum": [
         "Roda de Conversa",
-        "Show"
+        "Show",
+        "Oficinas",
+        "Rodas",
+        "Show",
+        "Expo",
+        "Feira",
+        "Festival",
+        "Rolê"
       ],
       "required": true
     },
